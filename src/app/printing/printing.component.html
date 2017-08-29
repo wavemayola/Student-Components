@@ -1,0 +1,22 @@
+<div  *ngIf = "print">
+<table>
+  <thead>
+    <tr>
+      <th> Student Number </th>
+      <th> Student First Name </th>
+      <th> Student Last Name </th>
+      <th> Student Program </th>
+      <th> Student Year </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor = "let student of studentsCollection">
+      <td> {{ student.studNo }} </td>
+      <td> {{ student.studFirstName }} </td>
+      <td> {{ student.studLastName}} </td>
+      <td> {{ student.studProgram }} </td>
+      <td> {{ student.studYear }} </td>
+    </tr>
+  </tbody>
+</table>
+</div>
